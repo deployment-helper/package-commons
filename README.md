@@ -8,25 +8,6 @@ Import and check how to use it.
 
 
 ```
-import Gcp from "@myjunior/gcp-appengine";
-const keyFile = "service-account-key.json"
-const gcpProjectId = "project-xyz";
-const gcp = new Gcp(keyFile);
-
-// create AppEngine Application
-gcp.createInstance(gcpProjectId).then((resp)=>{
-  console.log(resp);
-}).catch(err=>{
-  console.log(err);
-});
-
-// Get AppEngine Application
-gcp.getInstance(gcpProjectId).then((resp)=>{
-  console.log(resp);
-}).catch(err=>{
-  console.log(err);
-});
-
 
 ```
 
