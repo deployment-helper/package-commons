@@ -1,0 +1,43 @@
+{
+  "name": "@myjunior/commons",
+  "version": "v1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest -i",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "push": "rimraf dist && npm run build && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myjunior/package-commons.git"
+  },
+  "keywords": [
+    "vinaymavi",
+    "myjunior"
+  ],
+  "author": "vinaymavi@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myjunior/package-commons/issues"
+  },
+  "homepage": "https://github.com/myjunior/package-commons#readme",
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.0.0",
+    "axios": "^0.19.2",
+    "typescript": "^3.9.7",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.5",
+    "@types/node": "^14.0.23",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.3"
+  }
+}
