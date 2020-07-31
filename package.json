@@ -1,6 +1,6 @@
 {
   "name": "@myjunior/commons",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,8 +28,10 @@
     "node": "12.x"
   },
   "dependencies": {
+    "@types/express": "^4.17.7",
     "@types/uuid": "^8.0.0",
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "typescript": "^3.9.7",
     "uuid": "^8.3.0"
   },
