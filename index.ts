@@ -62,3 +62,4 @@ export interface JwtRequest extends Request {
 
 export { PermissionTemplates } from './src/constants';
 export { Permissions } from './src/permissions';
+export {ErrorBadReq,ErrorUnAuthorizedAccess} from './src/errors'

@@ -11,3 +11,12 @@ export const PermissionTemplates = {
   ENTITY_DELETE_PERMISSION_TEMPLATE: "`entity.${data.entityId}.delete`",
   ENTITY_MANAGE_USER_PERMISSION_TEMPLATE: "`entity.${data.entityId}.manageuser`",
 }
+
+export const ErrorMessages = {
+  "401": {
+    userDoesNotExist: "User does not exist",
+  },
+  "400": {
+    badRequest: "Invalid request pyalod",
+  },
+};
