@@ -2,6 +2,7 @@ import fs from "fs";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { Request } from "express";
+
 export function createKeyFile(serviceAccountKeyBase64: string) {
   const buff = new Buffer(serviceAccountKeyBase64, "base64");
   const fileName = `/tmp/${uuidv4()}`;
@@ -58,3 +59,6 @@ export function hasPermission(
 export interface JwtRequest extends Request {
   user?: any;
 }
+
+export { PermissionTemplates } from './src/constants';
+export { Permissions } from './src/permissions';
