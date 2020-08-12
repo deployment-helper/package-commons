@@ -1,5 +1,5 @@
-import winston from 'winston';
-const logger = winston.createLogger({
+import winston, { Logger } from 'winston';
+const logger:Logger = winston.createLogger({
     transports: [
       new winston.transports.Console(),
     ]
