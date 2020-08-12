@@ -2,6 +2,7 @@ import fs from "fs";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { Request } from "express";
+import logger from './src/logger';
 
 export function createKeyFile(serviceAccountKeyBase64: string) {
   const buff = new Buffer(serviceAccountKeyBase64, "base64");
@@ -62,4 +63,5 @@ export interface JwtRequest extends Request {
 
 export { PermissionTemplates } from './src/constants';
 export { Permissions } from './src/permissions';
-export {ErrorBadReq,ErrorUnAuthorizedAccess} from './src/errors'
+export {ErrorBadReq,ErrorUnAuthorizedAccess} from './src/errors';
+export {logger}

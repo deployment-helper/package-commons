@@ -1,6 +1,6 @@
 import { 
   createKeyFile, errorData, hasPermission, sendErrorResponse, 
-  sendSuccessResponse,PermissionTemplates,Permissions } from './index';
+  sendSuccessResponse,PermissionTemplates,Permissions,logger } from './index';
 describe('Package Module', () => {
   it('Module should loaded ', () => {
     expect(createKeyFile).toBeTruthy();
@@ -26,5 +26,8 @@ describe('Package Module', () => {
 
   it('Should export Permissions', () => {
     expect(Permissions).toBeTruthy();
+  });
+  it('Should export logger', () => {
+    expect(logger).toBeTruthy()
   })
 });
